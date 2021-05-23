@@ -36,3 +36,4 @@ function game(sequelize, DataTypes) {
         }
     })
 }
+module.exports = game
