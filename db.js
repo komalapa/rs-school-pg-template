@@ -1,8 +1,10 @@
 const Sequelize = require('sequelize');
+console.log("DB processing...");
                                 //database username   password
-const sequelize = new Sequelize('gamedb', 'postgres', 'ghastb0i', {
+const sequelize = new Sequelize('gamedb', 'task3', 'psqlpass', {
     host: 'localhost',
-    dialect: 'postgres'
+    dialect: 'postgres',
+    port: '5433'
 })
 
 sequelize.authenticate().then(
@@ -13,5 +15,5 @@ sequelize.authenticate().then(
     function fail(err) {
         console.log(`Error: ${err}`);
     }
-)
+);
 module.exports = sequelize;
