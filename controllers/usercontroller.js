@@ -1,4 +1,5 @@
-var router = Router();
+//var router = Router();
+var express = require('express');//koma fix line 1 Router() is not defined
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 
